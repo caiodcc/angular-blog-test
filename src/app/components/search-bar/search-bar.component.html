@@ -1,0 +1,12 @@
+<div class="container">
+    <app-search-bar-snippet [searchText]="searchText"></app-search-bar-snippet>
+    <div class="d-flex flex-column">
+        <div *ngFor="let item of colecao" class="d-flex flex-wrap flex-column list-item">
+            <h6 class="text-center">{{item.title}}</h6>
+            <p class="text-center">{{item.content}}</p>
+            <p class="text-center">{{item.date.toLocaleDateString()}}</p>
+        </div>
+        <div class="btn">Procurar</div>
+
+    </div>
+</div>
