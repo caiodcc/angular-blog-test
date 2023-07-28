@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TextsService } from '../services/texts.service';
 import { TextExample } from '../services/interfaces/text';
-import { SearchBarSnippetComponent } from './snippet/search-bar-snippet/search-bar-snippet.component';
+
 
 @Component({
   selector: 'app-search-bar',
@@ -10,7 +10,7 @@ import { SearchBarSnippetComponent } from './snippet/search-bar-snippet/search-b
 })
 export class SearchBarComponent {
   colecao!: TextExample[];
-  searchText: any = ''
+  searchText: string ='';
   
   constructor(private textService : TextsService){
   
@@ -23,6 +23,7 @@ export class SearchBarComponent {
     this.colecao = this.textService.getTexts();
     
     console.log(`coleção:`, this.colecao);
+
     
     
 }

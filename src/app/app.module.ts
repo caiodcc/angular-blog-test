@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { ForStartComponent } from './components/for-start/for-start.component';
 import { FormsModule } from '@angular/forms';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
-import { SearchBarSnippetComponent } from './components/search-bar/snippet/search-bar-snippet/search-bar-snippet.component';
+
+import { FilterPipe } from './components/services/interfaces/filter.pipe';
 
 
 
@@ -16,12 +17,15 @@ import { SearchBarSnippetComponent } from './components/search-bar/snippet/searc
     AppComponent,
     ForStartComponent,
     SearchBarComponent,
-    SearchBarSnippetComponent,
+    FilterPipe
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    
+    
 
   ],
   providers: [],
