@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { TextsService } from '../services/texts.service';
 import { TextExample } from '../services/interfaces/text';
 
@@ -9,7 +9,8 @@ import { TextExample } from '../services/interfaces/text';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent {
-  colecao!: TextExample[];
+  colecao: TextExample[];
+
   searchText: string ='';
   
   constructor(private textService : TextsService){

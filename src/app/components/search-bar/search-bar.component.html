@@ -4,7 +4,8 @@
         <input class="search_input" [(ngModel)]="searchText" type="text" name="" placeholder="Search...">
       </div>
     </div>
-    <div class="d-flex flex-column">
+    <h3 class="text-center mx-auto">Publicações</h3>
+    <div class="d-flex flex-column search-box mx-auto">
       <div *ngFor="let item of colecao | appFilter: searchText" class="d-flex flex-wrap flex-column list-item">
         <h6 class="text-center">{{item.title}}</h6>
         <p class="text-center">{{item.content}}</p>

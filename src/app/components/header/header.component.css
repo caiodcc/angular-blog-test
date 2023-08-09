@@ -1,0 +1,14 @@
+a {
+    font-size: 1rem !important;
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    transition: 1s;
+}
+
+a:hover {
+    color: var(--neon-color);
+    text-shadow: var(--neon-shadow)
+}

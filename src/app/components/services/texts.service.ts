@@ -10,7 +10,7 @@ export class TextsService {
   
   private colecao = [
     { id: '1', 
-      title: 'something',
+      title: 'Pipes com ngFor no Angular',
       author: 'Caio', 
       content: 'something',
       tag: 'Tech',
@@ -19,7 +19,7 @@ export class TextsService {
       subtitle: 'none' 
     
     }, { id: '2', 
-    title: 'queijo',
+    title: 'Variáveis de Ambiente no NestJS',
     author: 'Caio', 
     content: 'something',
     tag: 'Tech',
@@ -28,7 +28,7 @@ export class TextsService {
     subtitle: 'none' 
   
   }, { id: '3', 
-  title: 'vassoura',
+  title: 'Animações no Angular',
   author: 'Caio', 
   content: 'something',
   tag: 'Tech',
@@ -38,7 +38,7 @@ export class TextsService {
 
 },
 { id: '4', 
-title: 'chico',
+title: 'unnamed',
 author: 'Caio', 
 content: 'something',
 tag: 'Tech',
@@ -47,8 +47,28 @@ src: '',
 subtitle: 'none' 
 
 },
-{ id: '1', 
-title: 'caio',
+{ id: '5', 
+title: 'unnamed_2',
+author: 'Caio', 
+content: 'something',
+tag: 'Tech',
+date: new Date,
+src: '',
+subtitle: 'none' 
+
+},
+{ id: '6', 
+title: 'unnamed_3',
+author: 'Caio', 
+content: 'something',
+tag: 'Tech',
+date: new Date,
+src: '',
+subtitle: 'none' 
+}
+,
+{ id: '7', 
+title: 'unnamed_3',
 author: 'Caio', 
 content: 'something',
 tag: 'Tech',

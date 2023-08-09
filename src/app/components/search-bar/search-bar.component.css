@@ -1,58 +1,80 @@
 
 .list-item {
-    min-width: 250px;
+    min-width: 150px;
     max-height: 100px;
     padding: 10px;
     border: 1px solid white;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.list-item:hover{
+    background-color: black;
+    color: var(--neon-color);
+    text-shadow: var(--neon-shadow);
+    transition: 1s ease-in;
+    cursor: pointer;
 }
 
-.searchbar{
+.search-box {
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-width: 30vw;
+    border-radius: 4px;
+}
+
+.searchbar {
     margin-bottom: 30px;
     margin-top: 30px;
     height: 60px;
-    background-color: rgb(255,255,255,0.7);
+    background-color: rgb(255, 255, 255, 0.6);
     border-radius: 30px;
     padding: 10px;
-    }
+}
 
-    .search_input{
-    color: var(--yellow);
+.search_input {
+    color: white;
     border: 0;
     outline: 0;
     background: none;
-    width: 75px;
-    caret-color:transparent;
+    width: 125px;
+    caret-color: transparent;
     line-height: 40px;
     transition: width 0.4s linear;
-    }
+}
+.search_input::placeholder { 
+   color: white;
+  }
 
-    .searchbar:hover{
-        background-color: rgb(255, 255, 255, 0.1);
-        transition: 1s;
-    }
-    .searchbar:hover > .search_input{
+.searchbar:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+    transition: 1s;
+}
+
+.searchbar:hover>.search_input {
     padding: 0 10px;
     width: 350px;
-    caret-color:var(--yellow);
+    caret-color: var(--yellow);
     transition: width 0.4s linear;
-    }
-    .btn {
-        
-        color: white;
-        border: none;
-    }
-    .btn:active{
-        transform: scale(0.8);
-        transition: 0.8s;
-        border: none;
-    }
+}
 
-    .searchbar:hover > .search_icon{
+.btn {
+
+    color: white;
+    border: none;
+}
+
+.btn:active {
+    transform: scale(0.8);
+    transition: 0.8s;
+    border: none;
+}
+
+.searchbar:hover>.search_icon {
     background: white;
     color: #e74c3c;
-    }
+}
 
-    .search_icon{
+.search_icon {
     height: 40px;
     width: 40px;
     float: right;
@@ -60,6 +82,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color:white;
-    text-decoration:none;
-    }
+    color: white;
+    text-decoration: none;
+}

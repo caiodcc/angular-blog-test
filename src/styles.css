@@ -1,16 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;400;700;800&display=swap');
 
 @import "~bootstrap/dist/css/bootstrap.css";
 :root {
+    --blue: rgb(0, 102, 255);
     --yellow: rgb(173, 114, 11); 
+    --neon-color: color: #fff;
+    --neon-shadow: 0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px red,
+    0 0 82px red,
+    0 0 92px red,
+    0 0 102px red,
+    0 0 151px red;
+    --neon-shadow-blue: 0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 102, 255),
+    0 0 82px rgb(0, 102, 255),
+    0 0 92px rgb(0, 102, 255),
+    0 0 102px rgb(0, 102, 255),
+    0 0 151px rgb(0, 102, 255);
 }
 body{
     box-sizing: border-box;
     background-color: transparent;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Martel', serif;
     color: white;
 }
+
 #video-background {
     position: fixed;
     top: 0;
@@ -20,4 +39,8 @@ body{
     object-fit: cover; /* Para ajustar o vídeo à tela mantendo a proporção */
     z-index: -1; /* Para posicionar o vídeo atrás de outros elementos */
   }
-
+  .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }

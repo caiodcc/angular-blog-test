@@ -1,0 +1,44 @@
+<div class="container">
+
+  
+    <div class="row">
+      <div class="col-8">
+        <form [formGroup]="profileForm" class="d-flex flex-column justify-content-center align-items-center flex-wrap">
+
+
+
+          <input id="title" placeholder="Title" class="form-control text-center w-50 mb-2 mx-auto" type="text" formControlName="title">
+        
+  
+          <input id="subtitle" placeholder="Subtitle" class="form-control mb-2 w-50 text-center mx-auto" type="text" formControlName="subtitle">
+           
+            <select class="custom-select form-select mb-2" style="width: 150px !important;" id="inputGroupSelect03">
+              <option value="1">Tech</option>
+              <option value="2">Filosofia</option>
+              <option value="3">Outro</option>
+            </select>
+     
+        <textarea id="content" class="w-75 form-control mx-auto" type="text" formControlName="content"></textarea>
+          <input class="mt-2" id="formFileSm" type="file">
+          <button (OnSubmit)="submit" class="btn mt-2 p-2">Enviar</button>
+      </form>
+      </div>
+      
+      <div class="col">
+        <app-search-bar></app-search-bar>
+      </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

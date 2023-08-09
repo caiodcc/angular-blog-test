@@ -1,0 +1,16 @@
+:host {
+    display: block;
+}
+.form-control {
+    min-width: 250px;
+    min-height: 50px;
+}
+.btn {
+    font-size: 1.3rem;
+    color: white;
+    transition: 1s ease-in;
+}
+.btn:hover {
+    color: var(--neon-color);
+    text-shadow: var(--neon-shadow);
+}
